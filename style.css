@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  padding: 30px;
+  background-color: #808bb3;
+  font-family: "Special Elite", cursive;
+}
+
+.nav__center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.nav__brand {
+  font-family: "Pacifico", cursive;
+  font-size: 20px;
+  color: rgb(239, 247, 247);
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgb(102, 58, 58);
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+
+.links {
+  display: flex;
+  list-style: none;
+}
+
+.links a {
+  color: rgb(252, 252, 252);
+  text-decoration: none;
+}
+
+.links li {
+  padding-right: 30px;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.account {
+  display: flex;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+.account p {
+  margin-right: 30px;
+  font-size: 18px;
+}
+
+.account a {
+  color: rgb(252, 252, 252);
+  text-decoration: none;
+}
+
+.create {
+  background-color: #605663;
+  padding: 8px 15px;
+  text-align: center;
+  transition: opacity 200ms ease-in;
+  border-radius: 10px;
+}
+
+.create:hover {
+  opacity: 0.8;
+}
+
+.nav__toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 990px) {
+  nav {
+    padding-bottom: 0px;
+  }
+  .nav__center {
+    display: block;
+    width: 100%;
+  }
+
+  .nav__toggle {
+    display: block;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    color: aliceblue;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .effect {
+    transition: all 0.3s ease-in;
+  }
+
+  .nav__brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .nav__links {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+  }
+
+  .nav__showLinks {
+    height: 14rem;
+  }
+
+  .nav__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .links li {
+    padding: 0 0 12px;
+    font-size: 23px;
+  }
+  .account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .account p {
+    padding-bottom: 12px;
+    font-size: 23px;
+    margin: 0;
+  }
+
+  .create {
+    width: 100%;
+  }
+}
